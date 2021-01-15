@@ -1,4 +1,4 @@
-package com.cesar.ioasysempresasandroid
+package com.cesar.ioasysempresasandroid.util
 
 import android.content.Context
 import android.content.Intent

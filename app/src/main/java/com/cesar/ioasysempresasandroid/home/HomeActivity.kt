@@ -9,11 +9,14 @@ import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cesar.ioasysempresasandroid.*
 import com.cesar.ioasysempresasandroid.adapter.CompanyAdapter
 import com.cesar.ioasysempresasandroid.general.IoasysError
+import com.cesar.ioasysempresasandroid.util.color
+import com.cesar.ioasysempresasandroid.util.goTo
+import com.cesar.ioasysempresasandroid.util.hide
+import com.cesar.ioasysempresasandroid.util.show
 import kotlinx.android.synthetic.main.home_activity.*
 import kotlinx.android.synthetic.main.toolbar.*
 import org.koin.android.ext.android.inject

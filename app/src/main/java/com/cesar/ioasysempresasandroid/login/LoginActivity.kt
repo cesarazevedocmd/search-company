@@ -5,10 +5,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.cesar.ioasysempresasandroid.R
 import com.cesar.ioasysempresasandroid.general.IoasysError
-import com.cesar.ioasysempresasandroid.goTo
-import com.cesar.ioasysempresasandroid.hide
+import com.cesar.ioasysempresasandroid.util.goTo
+import com.cesar.ioasysempresasandroid.util.hide
 import com.cesar.ioasysempresasandroid.home.HomeActivity
-import com.cesar.ioasysempresasandroid.show
+import com.cesar.ioasysempresasandroid.util.show
 import kotlinx.android.synthetic.main.login_activity.*
 import org.koin.android.ext.android.inject
 import org.koin.core.parameter.parametersOf
