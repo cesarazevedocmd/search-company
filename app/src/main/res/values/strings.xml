@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ioasys Empresas Android</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Password</string>
+    <string name="label_entrar">ENTRAR</string>
+    <string name="label_welcome">BEM-VINDO AO  EMPRESAS</string>
+    <string name="label_subwelcome">Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.</string>
+    <string name="invalid_credentials">Credenciais informadas são inválidas, tente novamente.</string>
+    <string name="email_can_not_be_empty">E-mail não pode ser vazio</string>
+    <string name="password_can_not_be_empty">Password não pode ser vazio</string>
+    <string name="label_click_on_search_to_start">Clique na busca para iniciar.</string>
+    <string name="label_search">Search</string>
+    <string name="search_hint">Pesquisar</string>
+    <string name="label_items_not_found">Nenhuma empresa foi encontrada para a busca realizada</string>
+    <string name="label_company1">Empresa1</string>
+    <string name="label_business">Negócio</string>
+    <string name="label_country">Brasíl</string>
+    <string name="label_E1">E1</string>
+    <string name="title_activity_company_detail">CompanyDetail</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

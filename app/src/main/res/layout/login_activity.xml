@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".login.LoginActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/login_activity_imv_logo"
+            android:layout_width="184.5dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="62.5dp"
+            android:src="@mipmap/logo_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/login_activity_txv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="48.5dp"
+            android:layout_marginEnd="107dp"
+            android:gravity="center_horizontal"
+            android:text="@string/label_welcome"
+            android:textColor="@color/charcoal_grey"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_activity_imv_logo" />
+
+        <TextView
+            android:id="@+id/login_activity_txv_subwelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43.5dp"
+            android:layout_marginTop="16.5dp"
+            android:layout_marginEnd="43.5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/label_subwelcome"
+            android:textColor="@color/charcoal_grey"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_activity_txv_welcome" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_activity_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="45dp"
+            app:errorEnabled="true"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_activity_txv_subwelcome"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@null">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:hint="@string/label_email"
+                android:text="testeapple@ioasys.com.br"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_activity_edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            app:errorEnabled="true"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_activity_edt_email"
+            app:startIconDrawable="@drawable/ic_cadeado"
+            app:startIconTint="@null">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:hint="@string/label_password"
+                android:text="12341234"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_activity_btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/greeny_blue"
+            android:onClick="login"
+            android:text="@string/label_entrar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_activity_edt_password" />
+
+        <ProgressBar
+            android:id="@+id/login_activity_pgb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/login_activity_btn_enter"
+            app:layout_constraintEnd_toEndOf="@id/login_activity_btn_enter"
+            app:layout_constraintStart_toStartOf="@id/login_activity_btn_enter"
+            app:layout_constraintTop_toTopOf="@id/login_activity_btn_enter" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
