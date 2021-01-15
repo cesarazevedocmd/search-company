@@ -1,4 +1,3 @@
-![N|Solid](logo_ioasys.png)
 
 # README #
 
